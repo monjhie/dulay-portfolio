@@ -1,4 +1,4 @@
-# jerome-portfolio-v2
+# dulay-portfolio
 
 ## Project setup
 ```
