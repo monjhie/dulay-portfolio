@@ -1,4 +1,5 @@
 <template>
+
   <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -18,7 +19,7 @@
           <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm/6 font-semibold text-gray-900">{{ item.name }}</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href="#" class="text-sm/6 font-semibold text-gray-900">Start <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
       <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -40,7 +41,7 @@
                 <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">{{ item.name }}</a>
               </div>
               <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Start</a>
               </div>
             </div>
           </div>
@@ -53,17 +54,14 @@
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true" />Read more <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </div>
+      <div class="center-container">
+        <img src="./assets/img/monjhie.jpg" alt="Profile Picture" class="profile-picture" />
+      </div> 
         <div class="text-center">
-          <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Data to enrich your online business</h1>
-          <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+          <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Monjhie Dulay</h1>
+          <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">"Developing a website is like crafting a story—each line of code adds depth and character. The goal is to create an experience that feels as seamless as it is impactful."</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
@@ -73,46 +71,39 @@
     </div>
   </div>
 
-  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center" />
-    <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-    </div>
-    <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
-      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-    </div>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Work with us</h2>
-        <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.</p>
-      </div>
-      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-          <a v-for="link in links" :key="link.name" :href="link.href">233<span aria-hidden="true">&rarr;</span></a>
-        </div>
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-          <div v-for="stat in stats" :key="stat.name" class="flex flex-col-reverse gap-1">
-            <dt class="text-base/7 text-gray-300">{{ stat.name }}</dt>
-            <dd class="text-4xl font-semibold tracking-tight text-white">{{ stat.value }}</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-
 </template>
 
+
+
 <script setup>
+
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Portfolio', href: '#' },
+  { name: 'Blogs', href: '#' },
+  { name: 'Skills', href: '#' },
 ]
 
 const mobileMenuOpen = ref(false)
+
 </script>
+
+
+<style scoped>
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Make height equal to width for a perfect circle */
+  border-radius: 50%; /* Makes the image a circle */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+</style>
